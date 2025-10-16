@@ -73,3 +73,16 @@ body {
   background-color: #f7f7f7;
   color: #000000;
 }
+
+section {
+  padding: 100px 0;
+}
+
+.hero {
+  background-image: url("./assets/image/banner-desktop.jpg");
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

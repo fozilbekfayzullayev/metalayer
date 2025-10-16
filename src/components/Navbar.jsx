@@ -15,7 +15,10 @@ const Navbar = () => {
     <>
       <div className="custom-container flex items-center justify-between py-3.5 md:py-5">
         <div className="navbar-brand z-99">
-          <Link to="/" className="cursor-pointer hover:opacity-65 duration-75">
+          <Link
+            to="/"
+            className="cursor-pointer hover:opacity-65 transition-opacity duration-75"
+          >
             <img src={logoDesktop} alt="Metalayer prof logo" />
           </Link>
         </div>
