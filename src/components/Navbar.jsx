@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 import { logoDesktop } from "../assets/image";
 import { useState } from "react";
-import { Menu, MenuIcon, X } from "lucide-react";
+import { MenuIcon, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,11 +14,8 @@ const Navbar = () => {
   return (
     <>
       <div className="custom-container flex items-center justify-between py-3.5 md:py-5">
-        <div className="navbar-brand">
-          <Link
-            to="/"
-            className="cursor-pointer hover:opacity-65 duration-75 ease-in"
-          >
+        <div className="navbar-brand z-99">
+          <Link to="/" className="cursor-pointer hover:opacity-65 duration-75">
             <img src={logoDesktop} alt="Metalayer prof logo" />
           </Link>
         </div>
