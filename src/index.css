@@ -1,0 +1,75 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* FONTS */
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("./assets/fonts/RobotoCondensed-Light.woff2") format("woff2"),
+    url("./assets/fonts/RobotoCondensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("./assets/fonts/RobotoCondensed-Black.woff2") format("woff2"),
+    url("./assets/fonts/RobotoCondensed-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("./assets/fonts/RobotoCondensed-Bold.woff2") format("woff2"),
+    url("./assets/fonts/RobotoCondensed-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("./assets/fonts/RobotoCondensed-Regular.woff2") format("woff2"),
+    url("./assets/fonts/RobotoCondensed-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("./assets/fonts/RobotoCondensed-Medium.woff2") format("woff2"),
+    url("./assets/fonts/RobotoCondensed-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("RobotoCondensed-SemiBold.woff2") format("woff2"),
+    url("RobotoCondensed-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-display: "Roboto Condensed", "sans-serif";
+  --color-gold: #d4af37;
+  /* ... */
+}
+
+@layer components {
+  .custom-container {
+    @apply mx-auto px-[25px] md:px-[120px] w-full max-w-[1400px];
+  }
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: #f7f7f7;
+  color: #000000;
+}
