@@ -49,7 +49,10 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         {isOpen && (
-          <ul className="flex md:hidden flex-col space-y-4 uppercase bg-white px-6 shadow absolute top-0 left-0 w-full h-screen pt-24 cursor-pointer">
+          <ul
+            onClick={() => setIsOpen(false)}
+            className="flex md:hidden flex-col space-y-4 uppercase bg-white px-6 shadow absolute top-0 left-0 w-full h-screen pt-24 cursor-pointer"
+          >
             {menuItems.map((item, index) => (
               <li key={index}>
                 <Link

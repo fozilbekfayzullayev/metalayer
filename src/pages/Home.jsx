@@ -33,6 +33,8 @@ const Home = () => {
           </h1>
           <Link
             to="about"
+            smooth={true}
+            duration={500}
             className="text-gold text-lg md:text-xl mt-6 md:mt-8 inline-block underline cursor-pointer hover:opacity-65 transition-opacity duration-75 ease-in font-semibold"
           >
             Подробная информация
@@ -61,7 +63,7 @@ const Home = () => {
           <h2 className="text-2xl md:text-3xl font-semibold text-black mb-10 md:mb-16 text-center uppercase">
             О компании
           </h2>
-          <div className="about-features flex flex-wrap gap-15 justify-between items-center px-16">
+          <div className="about-features flex flex-wrap gap-15 justify-center md:justify-between items-center md:px-16 px-0">
             {feauturesData.map((feature, index) => (
               <Features
                 key={index}

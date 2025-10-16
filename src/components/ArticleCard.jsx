@@ -13,7 +13,7 @@ const ArticleCard = () => {
         />
       </div>
       <div className="card-content">
-        <h3 className="text-xl font-semibold mb-2">
+        <h3 className="text-xl font-semibold mb-2 hover:text-gold transition-colors duration-75 ease-in cursor-pointer">
           Cement SC2000 — Саноат ёпиштирувчиси
         </h3>
         <p className="text-gray-700 mb-4">
