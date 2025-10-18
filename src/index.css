@@ -68,10 +68,24 @@
   }
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: var(--font-display);
   background-color: #f7f7f7;
   color: #000000;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 section {

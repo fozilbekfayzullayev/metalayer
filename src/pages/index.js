@@ -1,2 +1,4 @@
 import Home from "./Home";
-export default Home;
+import Article from "./Article";
+
+export default { Home, Article };

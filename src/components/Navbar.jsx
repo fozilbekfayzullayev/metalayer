@@ -2,9 +2,12 @@ import { Link } from "react-scroll";
 import { logoDesktop } from "../assets/image";
 import { useState } from "react";
 import { MenuIcon, X } from "lucide-react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  window.onscroll = () => setIsOpen(false);
+
   const menuItems = [
     { label: "продукты", link: "product" },
     { label: "о нас", link: "about" },
@@ -15,12 +18,12 @@ const Navbar = () => {
     <>
       <div className="custom-container flex items-center justify-between py-3.5 md:py-5">
         <div className="navbar-brand z-99">
-          <Link
+          <NavLink
             to="/"
             className="cursor-pointer hover:opacity-65 transition-opacity duration-75"
           >
             <img src={logoDesktop} alt="Metalayer prof logo" />
-          </Link>
+          </NavLink>
         </div>
 
         {/* Desktop menu */}

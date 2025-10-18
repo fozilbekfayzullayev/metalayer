@@ -6,16 +6,18 @@ import {
 } from "react-router";
 
 // PAGES
-import Home from "./pages";
 
 // LAYOUT
 import RootLayout from "./layout/RootLayout";
+import Home from "./pages/Home";
+import Article from "./pages/Article";
 
 function App() {
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
         <Route index element={<Home />} />
+        <Route path=":id" element={<Article />} />
       </Route>
     )
   );
